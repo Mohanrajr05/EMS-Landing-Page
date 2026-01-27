@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowPilot - The Future of Healthcare Email</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#hero" class="logo">
+                    <i class="ph-fill ph-lightning"></i> FlowPilot
+                </a>
+                <!-- Links hidden on small mobile if needed, handled by flex -->
+                <div class="nav-links">
+                    <a href="#problem">Problem</a>
+                    <a href="#solution">Solution</a>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div>
+                    <a href="#demo" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Request
+                        Demo</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <h1>FlowPilot - A Smarter Email Management for <span class="text-gradient">Faster Workflows</span>
+                    </h1>
+                    <p style="font-size: 1.25rem;">FlowPilot uses AI to categorize, automate, and prioritize healthcare
+                        emails to reduce response delays and ensure no critical message is missed.</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#" class="btn btn-primary">Get Started Free</a>
+                        <a href="#" class="btn btn-secondary">Request Demo</a>
+                    </div>
+                </div>
+                <!-- Hero Dashboard Mockup -->
+                <div class="hero-mockup reveal">
+                    <!-- Dashboard Header -->
+                    <div class="mockup-header">
+                        <div class="mockup-search">
+                            <i class="ph-bold ph-magnifying-glass"></i>
+                            <span>Search emails...</span>
+                        </div>
+                        <div class="mockup-user">
+                            <div class="mockup-avatar">JD</div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="mockup-filters">
+                        <div class="mockup-pill active">Appointment Scheduling</div>
+                        <div class="mockup-pill">Clinical Triage</div>
+                        <div class="mockup-pill">Prescription Mgmt</div>
+                        <div class="mockup-pill">Billing</div>
+                    </div>
+
+                    <!-- Email List -->
+                    <div class="mockup-list">
+                        <!-- Email 1 (Appointment) -->
+                        <div class="mockup-item active">
+                            <div class="mockup-item-left">
+                                <div class="mockup-avatar-sm" style="background: #e0f2fe; color: #0284c7;">SJ</div>
+                                <div>
+                                    <div class="mockup-sender">Sarah Jenkins</div>
+                                    <div class="mockup-subject">Request to reschedule check-up appointment</div>
+                                </div>
+                            </div>
+                            <div class="mockup-meta">
+                                <span class="mockup-badge badge-scheduling">Appointment Scheduling</span>
+                                <span class="mockup-time">10:42 AM</span>
+                            </div>
+                        </div>
+
+                        <!-- AI Reply Preview -->
+                        <div class="mockup-ai-card">
+                            <div class="ai-header">
+                                <i class="ph-fill ph-sparkle"></i> AI Suggested Reply
+                            </div>
+                            <p>Hi Sarah, thanks for letting us know. We can certainly reschedule your check-up. Are you
+                                available next Tuesday at 10:00 AM or Thursday at 2:00 PM?</p>
+                            <div class="ai-actions">
+                                <button class="ai-btn-ghost">Edit</button>
+                            </div>
+                        </div>
+
+                        <!-- Email 2 (Referral) -->
+                        <div class="mockup-item">
+                            <div class="mockup-item-left">
+                                <div class="mockup-avatar-sm" style="background: #f1f5f9; color: #64748b;">N</div>
+                                <div>
+                                    <div class="mockup-sender">Dr. Nathan Lee</div>
+                                    <div class="mockup-subject">Patient Referral: John Doe - Cardiology Consultation
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mockup-meta">
+                                <span class="mockup-badge badge-referral">Provider Referrals</span>
+                                <span class="mockup-time">9:15 AM</span>
+                            </div>
+                        </div>
+
+                        <!-- Email 3 (Insurance) -->
+                        <div class="mockup-item">
+                            <div class="mockup-item-left">
+                                <div class="mockup-avatar-sm" style="background: #fef3c7; color: #d97706;">M</div>
+                                <div>
+                                    <div class="mockup-sender">Michael Chen</div>
+                                    <div class="mockup-subject">Clarification regarding Claim #482910</div>
+                                </div>
+                            </div>
+                            <div class="mockup-meta">
+                                <span class="mockup-badge badge-insurance">Billing & Insurance</span>
+                                <span class="mockup-time">Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="section-padding section-problem">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>The Problem</h2>
+                    <p>Healthcare professionals are drowning in noise. Patient safety is at risk.</p>
+                </div>
+                <div class="problem-grid">
+                    <div class="glass-card reveal">
+                        <div class="problem-header">
+                            <div class="icon-box"><i class="ph-fill ph-warning-circle"></i></div>
+                            <h3>Missed Patient Needs</h3>
+                        </div>
+                        <p>Urgent symptoms and referral requests get buried under hundreds of admin emails, causing
+                            dangerous delays in care.</p>
+                    </div>
+                    <div class="glass-card reveal">
+                        <div class="problem-header">
+                            <div class="icon-box"><i class="ph-fill ph-clock"></i></div>
+                            <h3>Clinical Time Waste</h3>
+                        </div>
+                        <p>Doctors and nurses spend hours manually filtering billing questions and scheduling requests
+                            instead of treating patients.</p>
+                    </div>
+                    <div class="glass-card reveal">
+                        <div class="problem-header">
+                            <div class="icon-box"><i class="ph-fill ph-kanban"></i></div>
+                            <h3>Triage Bottlenecks</h3>
+                        </div>
+                        <p>Without automated scoring, every email looks crucial. Critical P1 emergencies sit in the same
+                            inbox as routine feedback.</p>
+                    </div>
+                    <div class="glass-card reveal">
+                        <div class="problem-header">
+                            <div class="icon-box"><i class="ph-fill ph-trend-down"></i></div>
+                            <h3>Compliance Risks</h3>
+                        </div>
+                        <p>Manual handling leads to privacy slips and missed SLA deadlines, increasing legal liability
+                            and patient dissatisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="section-padding section-solution">
+            <div class="container">
+                <div class="text-center reveal" style="margin-bottom: 4rem;">
+                    <h2>The Solution</h2>
+                    <p>Intelligent Inbox Triage designed for Healthcare Organizations.</p>
+                </div>
+
+                <div class="solution-grid">
+                    <div class="glass-card solution-card reveal">
+                        <div class="solution-icon"><i class="ph-fill ph-sort-ascending"></i></div>
+                        <div>
+                            <h3>Smart Categorization</h3>
+                            <p>Our AI instantly separates Clinical Triage from Billing, Scheduling, and Admin, so the
+                                right team sees the right email.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card solution-card reveal">
+                        <div class="solution-icon"><i class="ph-fill ph-lightning"></i></div>
+                        <div>
+                            <h3>Priority Routing</h3>
+                            <p>P1 Emergencies bypass the queue for immediate action, while P3/P4 routine items get
+                                automated or batched responses.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card solution-card reveal">
+                        <div class="solution-icon"><i class="ph-fill ph-binoculars"></i></div>
+                        <div>
+                            <h3>Seamless Integration</h3>
+                            <p>Connects securely with Outlook and EHRs, maintaining HIPAA compliance without changing
+                                your daily workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section id="features" class="section-padding">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>Core Features</h2>
+                    <p>Engineered for the modern workflow.</p>
+                </div>
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="glass-card reveal">
+                        <div class="feature-header">
+                            <div class="feature-icon"><i class="ph-fill ph-tray"></i></div>
+                            <h4>7-Domain Classification</h4>
+                        </div>
+                        <p>Automatically sorts emails into 7 medical categories like Appointment, Prescriptions, and
+                            Billing.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="glass-card reveal">
+                        <div class="feature-header">
+                            <div class="feature-icon"><i class="ph-fill ph-list-numbers"></i></div>
+                            <h4>4-Tier Priority Scoring</h4>
+                        </div>
+                        <p>Marks emails from P1 (Emergency) to P4 (Low Priority) so you see urgent items first.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="glass-card reveal">
+                        <div class="feature-header">
+                            <div class="feature-icon"><i class="ph-fill ph-brain"></i></div>
+                            <h4>Clinical Context AI</h4>
+                        </div>
+                        <p>Understands medical terms and patient needs to route messages correctly.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="glass-card reveal">
+                        <div class="feature-header">
+                            <div class="feature-icon"><i class="ph-fill ph-chat-circle-text"></i></div>
+                            <h4>Automated Reply</h4>
+                        </div>
+                        <p>Sends smart, personal replies for routine questions to save staff time.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="glass-card reveal">
+                        <div class="feature-header">
+                            <div class="feature-icon"><i class="ph-fill ph-shield-check"></i></div>
+                            <h4>Enterprise Security</h4>
+                        </div>
+                        <p>Keeps patient data safe with top-level encryption and full privacy protection.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="glass-card reveal">
+                        <div class="feature-header">
+                            <div class="feature-icon"><i class="ph-fill ph-arrows-clockwise"></i></div>
+                            <h4>Outlook Sync</h4>
+                        </div>
+                        <p>Works directly with your current Outlook setup. No new software to learn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="section-padding">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>How It Works</h2>
+                    <p>Three simple steps to email nirvana.</p>
+                </div>
+
+                <div class="timeline-container reveal">
+                    <div class="timeline-step">
+                        <div class="step-dot"><i class="ph-bold ph-link"></i></div>
+                        <h4>Connect Outlook</h4>
+                        <p>Securely link your Outlook account to get started instantly.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-dot"><i class="ph-bold ph-target"></i></div>
+                        <h4>Focus on Priority</h4>
+                        <p>Reduce inbox noise and prioritize what truly matters.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-dot"><i class="ph-bold ph-tag"></i></div>
+                        <h4>Emails Categorized</h4>
+                        <p>Incoming emails are intelligently sorted into relevant categories.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-dot"><i class="ph-bold ph-lightning"></i></div>
+                        <h4>Smart Auto-replies</h4>
+                        <p>AI drafts smart replies for common messages to save time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <i class="ph-fill ph-lightning"></i> FlowPilot
+                    </div>
+                    <p class="footer-desc">FlowPilot is an AI-powered email management platform designed for healthcare
+                        organizations to improve communication, prioritization, and patient experience.</p>
+                </div>
+
+                <!-- Column 2: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">AI Products</a>
+                    <a href="#">FlowPilot (AI Email Management)</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <!-- Column 3: Resources -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Support</a>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="ph-fill ph-envelope"></i>
+                        <span>info@digimabble.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="ph-fill ph-phone"></i>
+                        <span>+32 467 85 99 60</span>
+                    </div>
+
+                    <div class="office-list">
+                        <div><strong>Belgium:</strong> Gyrfalcon Avenue 10, 1170 Watermael-Boitsfort</div>
+                        <div><strong>Belgium:</strong> Avenue Eiffel 8, 1300 Wavre</div>
+                        <div><strong>Estonia:</strong> Tartu mnt 67/1, 10115 Tallinn</div>
+                        <div><strong>India:</strong> Deepa Building, Near VIT, Vellore 632014</div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 FlowPilot powered by Digi Mabble AI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
